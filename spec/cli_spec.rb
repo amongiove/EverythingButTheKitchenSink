@@ -26,13 +26,6 @@ describe EverythingButTheKitchenSink::CLI do
     end
 
     describe "#display_recipe_list" do
-      # it "returns true when the recipe list is empty" do
-      #
-      #   result = other_cli.display_recipe_list
-      #   expect(result).to be(true)
-      #   expect($stdout).to receive(:puts). with("Sorry, I couldn't find any recipes with those ingredients.")
-      # end
-
       it "returns false when the recipe list has items" do
 
         result = cli.display_recipe_list
@@ -47,9 +40,6 @@ describe EverythingButTheKitchenSink::CLI do
         expect($stdout).to receive(:puts). with("\nWhich recipe would you like to see?\nPlease input the recipe number:\n")
         cli.user_recipe_choice
       end
-
-  
-
     end
   end
 end
