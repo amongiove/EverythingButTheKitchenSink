@@ -1,6 +1,9 @@
 require 'bundler'
 Bundler.require
 
+require 'dotenv'
+Dotenv.load('file1.env', 'file2.env')
+
 
 module EverythingButTheKitchenSink
 end
